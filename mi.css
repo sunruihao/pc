@@ -1,0 +1,1433 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+i, em {
+    font-style: normal;
+}
+
+b, strong {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearFix:before, .clearFix:after {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both;
+    overflow: hidden;
+}
+
+.clearFix {
+    zoom: 1;
+}
+
+.w1226 {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #333;
+    height: 40px;
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+.head ul li {
+    padding-right: 18px;
+    line-height: 40px;
+    position: relative;
+    float: left;
+}
+
+.head ul li:before {
+    content: "";
+    width: 1px;
+    height: 11px;
+    background: #b0b0b0;
+    position: absolute;
+    top: 14px;
+    right: 8px;
+}
+
+.head ul .nobor:before {
+    display: none;
+}
+
+.head ul li a {
+    color: #b0b0b0;
+}
+
+.head ul li a:hover {
+    color: #f8f8f8;
+}
+
+.headL {
+    float: left;
+}
+
+.headR {
+    float: right;
+}
+
+.headR ul {
+    float: left;
+}
+
+.headR .cart {
+    position: relative;
+    float: left;
+    margin-left: 2px;
+    background: #424242;
+    width: 103px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 17px;
+    z-index: 6;
+}
+
+.headR .cart i {
+    width: 20px;
+    height: 14px;
+    background: url("images2/icon_01.png") no-repeat -35px 0;
+    display: inline-block;
+    vertical-align: -3px;
+}
+
+.headR .cart span {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.headR .cart:hover {
+    background: #fff;
+}
+
+.headR .cart:hover i {
+    background-position: 0 0;
+}
+
+.headR .cart:hover span {
+    color: #ff781d;
+}
+
+.headR .cart p {
+    background: white;
+    width: 316px;
+    height: 0;
+    overflow: hidden;
+    line-height: 98px;
+    text-align: center;
+    font-size: 12px;
+    color: #5e5e5e;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+.headR .cart:hover p {
+    height: 98px;
+    transition: height .3s linear 0s;
+}
+
+.nav {
+    /*overflow: hidden;*/
+    position: relative;
+    height: 100px;
+    z-index: 5;
+}
+
+.nav h1 {
+    width: 55px;
+    height: 55px;
+    background: #ff6700 url("images2/mi-logo.png") no-repeat 3px 3px;
+    margin-top: 22px;
+    float: left;
+    cursor: pointer;
+}
+
+.nav ul {
+    z-index: 5;
+    padding-left: 160px;
+    float: left;
+}
+
+.nav ul > li {
+    z-index: 5;
+    padding-right: 26px;
+    float: left;
+    line-height: 100px;
+
+}
+
+.nav ul > li a {
+    color: #333333;
+}
+
+.nav ul > li > a:hover {
+    color: #ff6700;
+}
+
+.nav .hide {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    background: white;
+    height: 0;
+    overflow: hidden;
+
+}
+
+.nav ul > li:hover .hide {
+    z-index: 1;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+    border-top: 1px solid #e0e0e0;
+    height: 229px;
+    transition: height .5s;
+}
+
+.nav .hide > ol > li {
+    width: 204px;
+    padding-top: 37px;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+
+.nav .hide > ol > li img {
+    width: 90px;
+    height: 110px;
+    margin-left: 56px;
+
+}
+
+.nav .hide > ol > li h4 {
+    color: #575757;
+    font-size: 12px;
+    padding: 17px 0 3px;
+}
+
+.nav .hide > ol > li span {
+    color: #ff781d;
+    font-size: 12px;
+}
+
+.nav .hide > ol > li:before {
+    content: '';
+    width: 1px;
+    height: 100px;
+    background: #e0e0e0;
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+
+.nav .hide > ol .noBor:before {
+    display: none;
+}
+
+.nav .search {
+    position: relative;
+    width: 296px;
+    height: 50px;
+    float: right;
+    padding-top: 25px;
+}
+
+.nav .search input[type=text] {
+    width: 223px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    vertical-align: 19px;
+    padding: 0 10px;
+}
+
+.nav .search input[type=submit] {
+    width: 52px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    margin-left: -1px;
+    background: #ffffff url("images2/icon_01.png") no-repeat -48px -29px;
+}
+
+.nav .search input[type=submit]:hover {
+    background-color: #ff6700;
+    background-position: -2px -29px;
+}
+
+.nav .search input[type=text]:focus {
+    border: 1px solid #ff6700;
+    outline: none;
+    position: relative;
+    background: #fff;
+    z-index: 1;
+
+}
+
+.nav .search input[type=text]:focus + input[type=submit] {
+    border: 1px solid #ff6700;
+}
+
+.nav .search i, .nav .search b {
+    height: 18px;
+    font-size: 12px;
+    color: #757575;
+    position: absolute;
+    top: 41px;
+    text-align: center;
+    line-height: 18px;
+    background: #eeeeee;
+}
+
+.nav .search i {
+    width: 49px;
+    left: 112px;
+}
+
+.nav .search b {
+    width: 68px;
+    left: 166px;
+}
+
+.nav .search i:hover, .nav .search b:hover {
+    background: #ff6700;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background .5s;
+}
+
+.nav .inputUl {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    bottom: -141px;
+    left: 0;
+    width: 243px;
+    height: 140px;
+    border: 1px solid #ff6700;
+    border-top: none;
+    background: white;
+}
+
+.nav .inputUl > li {
+    height: 20px;
+    width: 245px;
+    line-height: 20px;
+}
+
+.nav .inputUl > li > a {
+    color: #000;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.nav .inputUl > li:hover {
+    background: #eeeeee;
+}
+
+.nav .inputUl > li > span {
+    display: inline-block;
+    color: #e1e1e1;
+    margin-right: 10px;
+    padding-left: 100px;
+}
+
+/*轮播图*/
+.banner {
+    width: 1226px;
+    height: 460px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.banner .box .boxInner div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.banner .box ul {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.banner .box ul li {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ccc;
+    float: left;
+    margin-left: 10px;
+}
+
+.banner .box ul li.on {
+    background: lightblue;
+}
+
+.banner .box a {
+    width: 30px;
+    height: 45px;
+    position: absolute;
+    top: 200px;
+    background-image: url("img2/pre.png");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    z-index: 10;
+    display: none;
+}
+
+.banner .box a:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.banner .box .btnLeft {
+    left: 256px;
+    background-position: 0 0;
+}
+
+.banner .box .btnRight {
+    right: 30px;
+    background-position: -50px 0;
+}
+
+.banner .list {
+    z-index: 3;
+    width: 226px;
+    height: 460px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .8);
+}
+
+.banner .list ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.banner .list ul li {
+    height: 42px;
+    padding-left: 10px;
+}
+
+.banner .list ul li a {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 42px;
+}
+
+.banner .list ul li i {
+    width: 8px;
+    height: 12px;
+    background: url("images2/icon_01.png") no-repeat -85px 0;
+    float: right;
+    margin: 14px 24px 0 0;
+}
+
+.banner .list ul > li:hover {
+    background: #ff6600;
+}
+
+.banner .list ul > li > .hide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 226px;
+    width: 300px;
+    height: 458px;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.banner .list ul > li:hover .hide {
+    display: block;
+}
+
+.banner .list .hide ol {
+    height: 437px;
+    padding-top: 23px;
+    background: #ffffff;
+    padding-left: 32px;
+    float: left;
+}
+
+.banner .list .hide ol li {
+    width: 267px;
+    margin-bottom: 35px;
+}
+
+.banner .list .hide ol li img {
+    float: left;
+    width: 18px;
+    height: 35px;
+}
+
+.banner .list .hide ol li h5 {
+    float: left;
+    font-size: 12px;
+    color: #5f5f5f;
+    padding-left: 22px;
+    line-height: 35px;
+}
+
+.banner .list .hide ol li a {
+    width: 58px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #ff6700;
+    text-align: center;
+    float: right;
+    margin: 5px 42px 0 0;
+    color: #ff7010;
+}
+
+.banner .list .hide ol li a:hover {
+    background: #f25807;
+    color: #fffaf7;
+    transition: all .5s;
+}
+
+.List {
+    width: 1226px;
+    height: 170px;
+    margin-top: 14px;
+    margin-bottom: 41px;
+}
+
+.List .ListL {
+    width: 234px;
+    height: 170px;
+    background: #5f5750;
+    float: left;
+}
+
+.List .ListL ul {
+    padding: 3px 0 0 3px;
+}
+
+.List .ListL ul li {
+    width: 76px;
+    height: 82px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.List .ListL ul li:before {
+    content: '';
+    width: 64px;
+    height: 1px;
+    background: #665e57;
+    position: absolute;
+    top: 0;
+    left: 6px;
+}
+
+.List .ListL ul .top:before {
+    display: none;
+}
+
+.List .ListL ul li:after {
+    content: '';
+    width: 1px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background: #665e57;
+}
+
+.List .ListL ul .left:after {
+    display: none;
+}
+
+.List .ListL ul li i {
+    width: 20px;
+    height: 18px;
+    background: url("images2/icon_02.png") no-repeat -4px -115px;
+    display: block;
+    margin: 21px 0 7px 28px;
+}
+
+.List .ListL ul li span {
+    font-size: 12px;
+    color: #cdcac8;
+}
+
+.List .ListL ul li:hover {
+    cursor: pointer;
+}
+
+.List .ListL ul li:hover i {
+    background-position: -40px -115px;
+}
+
+.List .ListL ul li:hover span {
+    color: #faf9f9;
+}
+
+.List .ListR {
+    float: right;
+    width: 978px;
+    height: 170px;
+}
+
+.List .ListR li {
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    overflow: hidden;
+    height: 170px;
+}
+
+.List .ListR .noMar {
+    margin-left: 0;
+}
+
+.List .ListR li:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    transition: all .5s;
+}
+
+.hot {
+    margin-top: 20px;
+    height: 58px;
+}
+
+.hot h1 {
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: 200;
+    float: left;
+}
+
+.hot .hotR {
+    padding-top: 20px;
+    width: 80px;
+    height: 24px;
+    float: right;
+}
+
+.hot .hotR i, .hot .hotR span {
+    width: 34px;
+    height: 22px;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+}
+
+.hot .hotR i {
+    margin-top: 10px;
+    background: url("images/minili.png") no-repeat 9px -1px;
+}
+
+.hot .hotR span {
+    margin-left: -1px;
+    background: url("images/minili.png") no-repeat -26px -1px;
+}
+
+.hot .hotR i:hover {
+    background-position: 9px -26px;
+    cursor: pointer;
+}
+
+.hot .hotR span:hover {
+    background-position: -26px -26px;
+    cursor: pointer;
+}
+
+.boxinner {
+    position: relative;
+    width: 1230px;
+    height: 340px;
+    overflow: hidden;
+    _zoom: 1;
+    padding-bottom: 40px;
+}
+
+.boxinner ul {
+    width: 1230px;
+    /*margin-left: 0;*/
+
+}
+
+.boxinner ul li {
+    cursor: pointer;
+    float: left;
+    width: 230px;
+    height: 300px;
+    margin-right: 16px;
+    padding-top: 39px;
+    border-top: 1px solid;
+    text-align: center;
+    background: #fafafa;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+}
+
+.boxinner ul li:hover {
+    top: -2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    transition: all 1s;
+}
+
+.boxinner ul li img {
+    width: 160px;
+    height: 160px;
+    padding: 17px 0 25px 37px;
+}
+
+.boxinner ul li a {
+    font-size: 12px;
+    color: #212121;
+}
+
+.boxinner ul li p {
+    font-size: 12px;
+    color: #B0B0B0;
+    padding-bottom: 10px;
+}
+
+.boxinner .for {
+    margin-left: 1230px;
+
+}
+
+.boxinner .for li {
+    float: left;
+}
+
+.HW {
+    width: 100%;
+    height: 732px;
+    background-color: #F5F5F5;
+    margin-top: 40px;
+}
+
+.HW .HWtop {
+    position: relative;
+    height: 118px;
+    /*background-color: #306ace;*/
+}
+
+.HW .HWtop h2 {
+    float: left;
+    font-size: 22px;
+    color: #333333;
+    padding-top: 76px;
+}
+
+.HW .HWtop span {
+    padding-right: 30px;
+    float: right;
+    font-size: 16px;
+    color: #424242;
+    padding-top: 79px;
+}
+
+.HW .HWtop span i {
+    position: absolute;
+    top: 79px;
+    right: 0;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url("images/jiantou.png") no-repeat 8px 6px;
+    background-color: #b0b0b0;
+    border-radius: 50%;
+}
+
+.HW .HWtop span:hover {
+    color: #FF6700;
+
+}
+
+.HW .HWtop span i:hover {
+
+    background: url("images2/pin.png") no-repeat 0 -11px;
+    color: #ff6600;
+
+}
+
+.HWbottom {
+    height: 614px;
+    /*background: #69b946;*/
+}
+
+.HWbottom a > img {
+    margin-right: 14px;
+}
+
+.HWbottom .HWB:hover {
+    top: -2px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+    transition: all 1s;
+}
+
+.HW .HWbottom ul li {
+    float: left;
+    width: 234px;
+    height: 300px;
+    margin: 0 14px 14px 0;
+    background-color: #FFFFFF;
+}
+
+.HW .HWbottom ul li img {
+    padding: 20px 0 20px 37px;
+    width: 160px;
+    height: 160px;
+}
+
+.HW .HWbottom ul li a {
+    font-size: 12px;
+    color: #333333;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.HW .HWbottom ul > li > p {
+    font-size: 12px;
+    color: #B0B0B0;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.HW .HWbottom ul > li > span {
+    display: block;
+    color: #FF6700;
+    font-size: 12px;
+    text-align: center;
+}
+
+.HW .HWbottom ul .HWbottomv {
+    margin-right: 0;
+}
+
+.HW .HWbottom ul > li:hover {
+    top: -2px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+    transition: all 1s;
+}
+
+.noBb {
+    width: 100%;
+    height: 732px;
+    background-color: #F5F5F5;
+}
+
+.noBb .noBbX {
+    height: 79px;
+}
+
+.noBb .noBbX h2 {
+    font-size: 22px;
+    color: #333333;
+    float: left;
+    padding-top: 20px;
+}
+
+.noBb .noBbX ul {
+    float: right;
+}
+
+.noBb .noBbX ul li {
+    float: left;
+    padding-top: 22px;
+    padding-left: 30px;
+}
+
+.noBb .noBbX li a {
+    font-size: 16px;
+    padding-top: 22px;
+    color: #424242;
+}
+
+.noBb .noBbX ul li:hover a {
+    color: #FF6700;
+    text-decoration: underline;
+}
+
+.noBb .noBbY ul > li {
+    position: relative;
+    overflow: hidden;
+    margin: 0 13px 14px 0;
+    float: left;
+    width: 234px;
+    height: 300px;
+    background-color: #FFFFFF;
+}
+
+.noBb .noBbY ul .nobob {
+    margin-right: 0;
+}
+
+.noBb .noBbY ul > li > a > img {
+    width: 150px;
+    height: 150px;
+    padding: 34px 0 20px 41px;
+
+}
+
+.noBb .noBbY ul > li h4 {
+    font-size: 12px;
+    color: #333333;
+    text-align: center;
+}
+
+.noBb .noBbY ul > li p {
+    font-size: 14px;
+    color: #FF6700;
+    text-align: center;
+    padding: 3px 0 12px 0;
+}
+
+.noBb .noBbY ul li span {
+    display: block;
+    font-size: 12px;
+    color: #b0b0b0;
+    text-align: center;
+}
+
+.noBb .noBbY ul > li:hover {
+    top: -2px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .4);
+    transition: all 1s;
+}
+
+.noBb .noBbY .div1 {
+    width: 234px;
+    height: 76px;
+    background-color: #FF6700;
+}
+
+.noBb .noBbY .div1 p {
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 18px;
+    padding: 9px 36px 6px;
+}
+
+.noBb .noBbY .div1 i {
+    font-size: 12px;
+    display: block;
+    color: #FFC299;
+    text-align: center;
+    padding-bottom: 28px;
+}
+
+.noBb .noBbY .div1 {
+    position: absolute;
+    bottom: -76px;
+}
+
+.noBb .noBbY ul li:hover .div1 {
+    bottom: 0;
+    transition: all .6s;
+}
+
+.noBb .noBbY ul .hd1 {
+    position: relative;
+    z-index: 1;
+    float: right;
+    width: 234px;
+    height: 143px;
+    margin-bottom: 14px;
+    /*background: #fff;*/
+    -webkit-transition: all .2s linear;
+}
+
+.noBb .noBbY ul .hd1 p {
+    padding-top: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 94px;
+    height: 21px;
+    color: #000000;
+}
+
+.noBb .noBbY ul .hd1 img {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 6px;
+    right: 20px;
+
+}
+
+.noBb .noBbY ul .hd1 span {
+    display: block;
+    color: #ff6600;
+    width: 94px;
+    height: 18px;
+}
+
+.noBb .noBbY ul .hd2 p {
+    font-size: 20px;
+}
+
+.noBb .noBbY ul .hd2 span {
+    display: block;
+    width: 40px;
+    height: 18px;
+    color: #e1e1e1;
+}
+
+.noBb .noBbY ul .hd2 i {
+    position: absolute;
+    right: 16px;
+    top: -9px;
+    width: 91px;
+    height: 91px;
+    background: url("images2/pinca.png") no-repeat -59px 0;
+}
+
+.noBbY .lLei:hover {
+    top: -2px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+    transition: all 1s;
+}
+
+.boxinner .replace li {
+    padding-top: 0;
+    width: 296px;
+    height: 415px;
+    margin-right: 11px;
+}
+
+.boxinner .replace > li > img {
+    width: 296px;
+    height: 220px;
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.boxinner .replace > li > p {
+    padding: 20px 0 20px 0;
+}
+
+.boxinner .replace > li > h6 > span {
+    color: #ff6600;
+}
+
+.content {
+    margin-bottom: 20px;
+    height: 420px;
+    background: #e1e1e1;
+}
+
+.content ul > li {
+    position: relative;
+    width: 299px;
+    height: 419px;
+    float: left;
+    margin-right: 10px;
+    border-top: 1px solid #ffc85c;
+    background: white;
+}
+
+.content ul .nobor {
+    margin-right: 0;
+}
+
+.content ul > li h3 {
+    font-size: 16px;
+    color: #ffc85c;
+    padding-top: 40px;
+
+}
+
+.content ul > li h3,h6 {
+    width: 248px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.content ul > li>p{
+    width: 248px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.content ul > li img {
+    width: 200px;
+    height: 142px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.content ul > li ol {
+    padding-left: 10px;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    left: 98px;
+    bottom: 30px;
+}
+
+.content ul > li ol li {
+    float: left;
+    margin: 5px;
+    width: 8px;
+    height: 8px;
+    background: #e1e1e1;
+    border-radius: 50%;
+    border-color: #ff6600;
+}
+
+.content ul > li ol li:hover {
+    cursor: pointer;
+    background: #ff6600;
+}
+
+.content ul > li ol .big {
+    width: 7px;
+    height: 7px;
+    border: 2px solid #ff6600;
+    border-radius: 50%;
+    background: white;
+
+}
+
+.content ul > li ol .big:hover {
+    background: white;
+}
+
+.content ul > li i {
+    display: none;
+    padding-top: 15px;
+    width: 20px;
+    height: 33px;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.content ul > li:hover i {
+    display: block;
+}
+
+.content ul > li i:hover {
+    background: #8d8d8d;
+}
+
+.content ul > li:hover {
+    top: -2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+    transition: all 1s;
+}
+
+.content ul > li .left span {
+    display: block;
+    width: 10px;
+    height: 15px;
+    margin: 0 auto;
+    background: url("images2/aaa1.png") no-repeat -15px 0;
+}
+
+.content ul > li .right {
+    right: 0;
+}
+
+.content ul > li .right span {
+    display: block;
+    width: 10px;
+    height: 15px;
+    margin: 0 auto;
+    background: url("images2/aaa1.png") no-repeat 0 0;
+}
+
+.zsnr {
+    height: 285px;
+}
+
+.zsnr ul li {
+    height: 285px;
+    position: relative;
+}
+
+.zsnr ul li h3 {
+    font-size: 14px;
+    color: #333;
+    margin: 0 auto;
+    padding: 30px 0 10px 0;
+}
+
+.zsnr ul li h3:hover {
+    color: #ff6600;
+}
+
+.zsnr ul li p {
+    color: #b4b4b4;
+    font-size: 12px;
+    padding: 0;
+}
+
+.zsnr ul li img {
+    width: 296px;
+    height: 180px;
+    padding: 0;
+}
+
+.zsnr ul li i {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 140px;
+    width: 34px;
+    height: 16px;
+    border-radius: 14px;
+    border: 2px solid white;
+    padding-top: 3px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.zsnr ul li > i:hover {
+    background-color: #ff6600;
+    border-color: #ff6600;
+}
+
+.zsnr ul li i span {
+
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0 auto;
+    background: url("images2/asadad.png") no-repeat 0 0;
+}
+
+.kxL {
+    margin-top: 30px;
+    width: 100%;
+    height: 80px;
+    background: white;
+}
+
+.kxL ul {
+    height: 79px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.kxL ul li {
+    float: left;
+    width: 244px;
+    height: 80px;
+    position: relative;
+}
+
+
+
+.kxL ul li a {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #747474;
+    line-height: 79px;
+    text-align: center;
+}
+.kxL ul li a i {
+    margin-right: 5px;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url("images2/bannnn.png")no-repeat 0 0;
+    vertical-align: middle;
+}
+.kxL ul li a:hover {
+    color: #ff6600;
+}
+.kxL ul li:before{
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    width: 0;
+    content: '';
+    height: 30px;
+    border: 1px solid #e1e1e1;
+}
+.kxL ul .nobor:before{
+    display: none;
+}
+.kxL ul li a:hover i{
+    background: url("images2/saasasa.png")no-repeat -30px 0;
+}
+
+.zde{
+    height: 150px;
+}
+.zde ul li{
+    width: 160px;
+    height: 150px;
+    float: left;
+}
+.zde ul .nor{
+    margin-right: 0;
+}
+.zde ul li h3{
+    color: #333333;
+    padding: 10px 0 6px 0;
+    font-weight: 400;
+}
+.zde ul li a{
+    display: block;
+    font-size: 12px;
+    width: 48px;
+    color: #666666;
+    line-height: 24px;
+    text-align: center;
+
+}
+.zde ul li a:hover{
+    color:#ff6600;
+}
+.zde .zdeR{
+    margin-top: 25px;
+    width: 252px;
+    height: 112px;
+    float: right;
+}
+.zde .zdeR i{
+    margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+    padding-left: 52px;
+}
+.zde .zdeR p{
+    font-size: 12px;
+    color: #666666;
+    margin: 8px auto;
+    padding-left: 60px;
+
+}
+.zde .zdeR .hide{
+    position: relative;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    border: 1px solid #ff6600;
+    margin: 10px 0 0 65px;
+}
+.zde .zdeR .hide b{
+    position: absolute;
+    top: 8px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background: url("images2/szxzc.png")no-repeat 0 0;
+}
+.zde .zdeR .hide:hover{
+    background: #ff6600;
+}
+.zde .zdeR .hide:hover span{
+    color: white;
+}
+.zde .zdeR .hide:hover b{
+    background-position: -14px 0;
+}
+.zde .zdeR .hide span{
+    display: block;
+    padding-left: 20px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #ff6600;
+}
+.dibu{
+    height: 100px;
+    padding-left: 50px;
+}
+.dibu h2{
+    vertical-align: middle;
+    float: left;
+    width: 56px;
+    height: 57px;
+    background: url("images2/logo-footer.png")no-repeat 0 0;
+    padding-left: 10px;
+}
+.dibu p{
+    float: left;
+    width: 800px;
+    height: 20px;
+    line-height: 20px;
+    color: #5e5e5e;
+    position: relative;
+}
+.dibu p a{
+    display: inline-block;
+    color: #5e5e5e;
+    height:0;
+    line-height: 20px;
+    position: relative;
+    margin: 6px;
+    /*padding-right: 10px;*/
+/
+}
+.dibu p a:after{
+    position: absolute;
+    top: 4px;
+    right: -8px;
+    content: '';
+    width: 0;
+    height: 10px;
+    border: 1px solid #e1e1e1;
+}
+.dibu p .nobor:after{
+    display: none;
+}
+
+.dibu p a:hover{
+    color: #ff6600;
+}
+.dibu .ddd{
+    margin-top: -20px;
+    float: left;
+    width: 358px;
+    height: 100px;
+}
+.dibu div img{
+    width: 70px;
+    height: 28px;
+    float: left;
+    margin: 3px;
+}
+.did{
+    height: 60px;
+
+}
+.did p{
+    width: 300px;
+    height: 30px;
+    margin:  0 auto;
+    font-size: 20px;
+    color: #5e5e5e;
+    font-weight: 400;
+}
